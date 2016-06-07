@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 07.06.2016 13:30:55 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="DB.Kunde" table="kunde" catalog="mmdb" optimistic-lock="version">
+        <id name="idKunde" type="int">
+            <column name="idKunde" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="Name" length="45" />
+        </property>
+        <property name="vorname" type="string">
+            <column name="Vorname" length="45" />
+        </property>
+        <property name="plz" type="string">
+            <column name="PLZ" length="45" />
+        </property>
+        <property name="ort" type="string">
+            <column name="Ort" length="45" />
+        </property>
+        <property name="stra&#223;e" type="string">
+            <column name="Stra&#223;e" length="45" />
+        </property>
+        <property name="prio" type="java.lang.Integer">
+            <column name="Prio" />
+        </property>
+    </class>
+</hibernate-mapping>
